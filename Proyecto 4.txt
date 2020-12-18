@@ -1,0 +1,39 @@
+Build a Technical Documentation Page
+
+
+1. - id="main-doc" contiene el contenido principal
+2. - Dentro de esto, poner secciónes class="main-section"        
+3. - Dentro de cada sección debe haber - un elemento header 
+4. - En cada un header debe haber un id que corresponda con el titulo del header
+5. - Todo el main section debe contener al menos 10 p
+6. - Todo el main section debe tener al menos 5 elementos de codigo
+7. - Todo le main section debe tener al menos 5 li elementos 
+8. - Agregar id="navbar" 
+9. - Nav element debe tener un header que contenga un texto que describa la documentación
+10. - Agregar a nav elementos a debe haber uno por cada section
+11. - Header debe estar antes de cualquier elemento a
+12. - Cada elemento a en el nav debe tener el texto correspondiente de cada sección 
+13. - Cuando haces click en cada a te debe llevar a la section con ese nombre
+14. - En desktops navbar debe mostrarse a la izquierda de la pantalla y estar siempre visible
+15. - Debe tener al menos un media query
+
+
+---------------------------------------------------------------------------------------
+1. - id="main-doc" - Todo el contenido 				|2. - Crear classe="main-section"
+								      (minimo 5)
+8. - id="navbar" 						|3. - Dentro de cada sección debe 
+     								      haber un header h2
+9. - Header / 11. - Header antes de enlaces a			|4. - Cada header debe tener su id 
+10. - Agregar elementos / 4.					      que corresponda con el titulo
+      Uno por cada sección  					|5. - En todo el documento debe haber
+								      al menos 10 p parrafos
+12. - Cada elemento a corresponde a un header / 4.		|6. - Debe tener 5 elementos codigo ?
+12. 13. - Cada enlace lleva a su header correspondiente.        
+12. 13. 							|7. - Al menos 5 li en todo el documento
+12. 13.								
+12. 13.
+14. - En version desktop, navbar siempre esta a la izquierda
+
+
+-----------------------------------------------------------------------------------------
+15. - Agregar un media Query
