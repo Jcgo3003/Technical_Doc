@@ -1,7 +1,7 @@
 ----------------
-      Python
+      Python Documentation
 ----------------
-Introduccion
+Introduction
 
 This is a quick reference for Python, this is not 
 A course, all the info comes from the book
@@ -130,37 +130,9 @@ tu_lista[0:3] - Para cortar una lista.
 	[-2:] - Para cortar los últimos elementos del la lista.
 	[2:10, 3] - Para cortar del elemento 2 al 9 en saltos de 3.
 
-for elementos in tu_lista[:3]: - Para hacer un loop solo hasta el tercer elemento.
-
 Copiar 
 
 tu_lista[:] - Para copiar una lista.
-
-Comprobar  
-
-if tu_lista: - Al colocarlo en un if stament, python regresa True o False, dependiendo 
-		si la lista tiene elementos o no.
-
-Crear listas 
-
-numbers = list(range(1,6) - Para hacer una lista de números del 1 al 5.
-even_numbers = list(range(2,11,2)) - Para hacer una lista de números primos del 1 al 10.
-
-squares = []
-for value in range(1, 11): 
-	square = value ** 2
-	quares.append(square) - Lista de numerous al cuadrado del 1 al 11.
-
-squares = [value**2 for value in range(1, 11)] - Lista de numeros al cuadrado 
-						con la tecnica de list comprehension.
-
-Stadistics 
-
-min(tu_lista) - Para obtener el numero mas pequeño.
-
-max(tu_lista) - Para obtener el numero mas grande.
-
-sum(tu_lista) - Para obtener la suma de una lista.
 
 ------------
 Tuples 
@@ -183,28 +155,10 @@ print(tu_dic["Elemento"]) - Accesando a un elemento.
 
 del tu_dic["Elemento"] - Eliminando un elemento.
 
-tu_dic = {		- Un diccionario en multiples lineas.
-	"bla": 2,
-	"bla2": 3,
-	"bla3": 4
-	}
-
-for key, value in tu_dic.items(): - Te permite explorar un Diccionario con un
-	print(f"/nKey: {key}")	    for loop. items() regresa un paquete key-value().
-	print(f"Value: {value}").   Items te da una lista de cada key y su valor
-
-for name in tu_dic.keys(): - Te muestra las llaves del diccionario.
-	print(name)          Aunque, solo que con key() es mas explicito.
-		             for name in tu_dic: funcionaria igual.
-
-if "elemento" in tu_dic.keys(): - De esta manera puedes hacer una comprobación 
-				  Sobre un key en un diccionario, keys() regresa una
-				  Lista con todas las keys.
 
 sorted(tu_dic.keys())	        - Devuelve una lista ordenada.
 
 tu_dic.values() 		- Hace una lista de los valores un diccionario.
-
 
 tu_lista = [dic1, dic2, dic3]   - Nesting diccionarios en una lista	
 
