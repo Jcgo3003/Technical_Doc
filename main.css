@@ -1,0 +1,90 @@
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  background: #eee;
+}
+
+header {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+article {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+nav#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 230px;
+  background: #448AFF;
+  color: whitesmoke;
+  border: 2px solid blue;
+}
+
+nav#navbar header {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+nav#navbar ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
+nav#navbar ul li a.nav-link {
+  line-height: 40px;
+  font-size: 16px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+main#main-doc {
+  margin-left: 250px;
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  nav#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    background: red;
+    color: whitesmoke;
+    border: 2px solid blue;
+  }
+  nav#navbar header {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+  }
+  nav#navbar ul li {
+    list-style-type: none;
+    text-align: left;
+  }
+  nav#navbar ul li a.nav-link {
+    line-height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  main#main-doc {
+    margin-top: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
