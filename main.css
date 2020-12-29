@@ -1,3 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-btn {
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  #menu-btn {
+    position: fixed;
+    z-index: 2;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    border: 2px solid yellow;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #menu-btn .burger {
+    position: fixed;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #menu-btn .burger::before {
+    content: "";
+    position: fixed;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #menu-btn .burger::after {
+    content: "";
+    position: fixed;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #menu-btn .burger.open {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    background: transparent;
+  }
+  #menu-btn .burger.open::before {
+    -webkit-transform: rotate(45deg) translate(5px, 8px);
+            transform: rotate(45deg) translate(5px, 8px);
+  }
+  #menu-btn .burger.open::after {
+    width: 28px;
+    -webkit-transform: rotate(-45deg) translate(3px, -7px);
+            transform: rotate(-45deg) translate(3px, -7px);
+  }
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
@@ -86,5 +156,14 @@ main#main-doc {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

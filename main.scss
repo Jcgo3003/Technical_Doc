@@ -1,3 +1,5 @@
+@import "config", "menu";
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
@@ -265,4 +267,14 @@ main#main-doc {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+
 }
