@@ -5,66 +5,58 @@
   padding: 0;
 }
 
-#menu-btn {
-  overflow: hidden;
-}
-
 @media (max-width: 800px) {
   #menu-btn {
     position: fixed;
-    z-index: 2;
-    right: 1rem;
-    top: 1rem;
-    height: 20px;
-    width: 28px;
-    border: 2px solid yellow;
-    cursor: pointer;
+    z-index: 1;
+    top: 20px;
+    left: 35px;
+    width: 35px;
+    height: 35px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   #menu-btn .burger {
     position: fixed;
-    right: 0;
-    top: 0.5rem;
-    width: 28px;
+    top: 35px;
+    left: 35px;
+    width: 35px;
     height: 3px;
-    background: #fff;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    background: #EEE;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   #menu-btn .burger::before {
     content: "";
     position: fixed;
-    top: -8px;
-    width: 28px;
+    top: 25px;
+    width: 35px;
     height: 3px;
-    background: #fff;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    background: #EEE;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   #menu-btn .burger::after {
-    content: "";
+    content: '';
     position: fixed;
-    top: 8px;
-    width: 20px;
+    top: 45px;
+    width: 25px;
     height: 3px;
-    background: #fff;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    background: #EEE;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-  #menu-btn .burger.open {
-    -webkit-transform: rotate(720deg);
-            transform: rotate(720deg);
+  #menu-btn .burger:hover {
     background: transparent;
   }
-  #menu-btn .burger.open::before {
-    -webkit-transform: rotate(45deg) translate(5px, 8px);
-            transform: rotate(45deg) translate(5px, 8px);
+  #menu-btn .burger:hover::before {
+    -webkit-transform: rotate(45deg) translate(8px, 8px);
+            transform: rotate(45deg) translate(8px, 8px);
   }
-  #menu-btn .burger.open::after {
-    width: 28px;
-    -webkit-transform: rotate(-45deg) translate(3px, -7px);
-            transform: rotate(-45deg) translate(3px, -7px);
+  #menu-btn .burger:hover::after {
+    width: 35px;
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+            transform: rotate(-45deg) translate(6px, -7px);
   }
 }
 
@@ -106,6 +98,7 @@ nav#navbar header {
 }
 
 nav#navbar ul li {
+  margin-left: 30px;
   list-style-type: none;
   text-align: left;
 }
@@ -118,8 +111,8 @@ nav#navbar ul li a.nav-link {
 }
 
 main#main-doc {
-  margin-left: 250px;
-  width: 80%;
+  margin-left: 270px;
+  width: 75%;
 }
 
 @media (max-width: 800px) {
@@ -129,8 +122,7 @@ main#main-doc {
     top: 0;
     height: 75px;
     width: 100%;
-    background: red;
-    color: whitesmoke;
+    color: #EEE;
     border: 2px solid blue;
   }
   nav#navbar header {
@@ -152,18 +144,9 @@ main#main-doc {
   }
   main#main-doc {
     margin-top: 100px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
   }
-}
-
-.menu-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

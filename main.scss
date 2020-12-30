@@ -27,7 +27,6 @@ nav#navbar {
   height: 100%;
   width: 230px;
   background: #448AFF;
-
   color: whitesmoke;
   border: 2px solid blue;
 
@@ -41,9 +40,12 @@ nav#navbar {
   }
 
   ul {
+    
     li {
+      margin-left: 30px;
       list-style-type: none;
       text-align: left;
+
       a.nav-link {
         line-height: 40px;
         font-size: 16px;
@@ -56,173 +58,173 @@ nav#navbar {
 }
 
 main#main-doc {
-  margin-left: 250px;
-  width: 80%;
+  margin-left: 270px;
+  width: 75%;
   
-  section#introduction.main-section {
-    header {
+  // section#introduction.main-section {
+  //   header {
       
-    }
+  //   }
 
-    article {
+  //   article {
       
-      p {
+  //     p {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#w_python.main-section {
-    header {
+  // section#w_python.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#functions.main-section {
-    header {
+  // section#functions.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#operaciones.main-section {
-    header {
+  // section#operaciones.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#listas.main-section {
-    header {
+  // section#listas.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#tuples.main-section {
-    header {
+  // section#tuples.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#diccionarios.main-section {
-    header {
+  // section#diccionarios.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#set.main-section {
-    header {
+  // section#set.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#strings.main-section {
-    header {
+  // section#strings.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#print.main-section {
-    header {
+  // section#print.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
-  section#reference.main-section {
-    header {
+  // section#reference.main-section {
+  //   header {
 
-    }
+  //   }
 
-    article {
-      p {
+  //   article {
+  //     p {
 
-      }
+  //     }
 
-      code {
+  //     code {
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 }
 
 @media (max-width: 800px) { 
@@ -232,11 +234,8 @@ main#main-doc {
     top: 0;
     height: 75px;
     width: 100%;
-    background: red;
-    // 448AFF
-    color: whitesmoke;
+    color: #EEE;
     border: 2px solid blue;
-  
   
     header {
       width: 300px;
@@ -263,18 +262,8 @@ main#main-doc {
 
   main#main-doc {
     margin-top: 100px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
   }
-}
-
-.menu-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-
 }
