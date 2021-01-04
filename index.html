@@ -8,13 +8,13 @@
 </head>
 <body>
   <div id="menu-btn">
-    <span class="burger"></span>
+    <span id="burger"></span>
   </div>
   <nav id="navbar">
     <header>Python Documentation</header>
-    <ul>
+    <ul id="menu-content">
       <li><a class="nav-link" href="#introduction">Introduction</a></li>
-      <li><a class="nav-link" href="#w_python">What is Python?</a></li>
+      <li><a class="nav-link" href="#what_is_python?">What is Python?</a></li>
       <li><a class="nav-link" href="#functions">Functions</a></li>
       <li><a class="nav-link" href="#operaciones">Operaciones</a></li>
       <li><a class="nav-link" href="#listas">Listas</a></li>
@@ -30,287 +30,233 @@
     <section class="main-section" id="introduction">
       <header>Introduction</header>
       <article>
+        <p>
           This is a quick reference for Python, this is not 
           A course, all the info comes from the book
 
           "Python: Crash course"
 
           For more info please buy the book from this link
-        <p>
-
         </p>
-
       </article>
     </section>
 
-    <section class="main-section" id="w_python">
+    <section class="main-section" id="what_is_python?">
       <header>What is Python?</header>
       <article>
+        <p>
           Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.[27]
 
           Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.
-        <p>
-
         </p>
-
       </article>
     </section>
 
     <section class="main-section" id="functions">
       <header>Functions</header>
       <article>
-            A function is a block of code which only runs when it is called.
-            You can pass data, known as parameters, into a function.
-            A function can return data as a result.
         <p>
-
+          A function is a block of code which only runs when it is called.
+          You can pass data, known as parameters, into a function.
+          A function can return data as a result.
         </p>
-
       </article>
     </section>
 
     <section class="main-section" id="operaciones">
       <header>Operaciones</header>
       <article>
-        +	- Suma	
-
-        -	- Resta
-
-        *	- Multiplicacion
-
-        /	- Division
-
-        // 	- Division entera - 3.5 // 20 = 1
-
-        ** 	- Exponente
-
-        14_000_000_000 - Para agrupar números muy largos.
-
-        x, y, z = 0, 0, 0 - Asignar varios valores un una sola linea.
         <p>
-
+          <ul>
+            <li>+	- Suma</li>
+            <li>-	- Resta</li>
+            <li>*	- Multiplicacion</li>
+            <li>/	- Division</li>
+            <li>// 	- Division entera - 3.5 // 20 = 1</li>
+            <li>** 	- Exponente</li>
+            <li>14_000_000_000 - Para agrupar números muy largos.</li>
+            <li>x, y, z = 0, 0, 0 - Asignar varios valores un una sola linea.</li>
+          </ul>
         </p>
-        <code>
 
-        </code>
       </article>
     </section>
 
 
     <section class="main-section" id="listas">
       <header>Listas</header>
-      <article>
-          Acceder
+      <article><p>
 
-          tu_lista[0] - Accesar al primer dato de la lista, de la misma manera puedes modificarlo,
-            se puede combinar con otras opciones
-            tu_lista[0].title()
+        <b>Acceder</b><br/>
+        
+        <code>tu_lista[0]</code> - Accesar al primer dato de la lista, de la misma manera puedes modificarlo,
+          se puede combinar con otras opciones
+          tu_lista[0].title()<br/>
 
-          tu_lista[-1] - Accesar el ultimo elemento de una lista.
-            Puedes acceder al penultimo por ejemplo agregando [-2]
+          <code>tu_lista[-1]</code> - Accesar el ultimo elemento de una lista.
+          Puedes acceder al penultimo por ejemplo agregando [-2]<br/>
 
-          Agregar 
+        <b>Agregar</b><br/>
 
-          tu_lista.append("elemento") - Agregando elementos al ultimo lugar en la lista.
+        <code>tu_lista.append("elemento")</code> - Agregando elementos al ultimo lugar en la lista.<br/>
 
-          tu_lista.insert( 1, "elemento") - Insertando un elemento en un sitio en especifico.
+        <code>tu_lista.insert( 1, "elemento")</code> - Insertando un elemento en un sitio en especifico.<br/>
 
-          Eliminar 
+        <b>Eliminar</b><br/>
 
-          tu_lista.pop() - Elimina el ultimo elemento de una lista, 
-            si agregas un numero va a eliminar el elemento en es index que le indiques pop(0)
-            , también te permite guardar ese ultimo elemento en una variable.
-            var_reservar = tu_lista.pop()
-
-
-          tu_lista.remove('nombre_elemento') - Para remover un elemento en especifico.
-
-          del tu_lista[2] - Elimina un elemento en el index que le indiques.
-
-          Acomodar 
-
-          tu_lista.reverse() - Para cambiar el orden en una lista permanente.
-
-          tu_lista.sort() - Organiza una lista de forma permanente, si agregas reverse=True 
-              organisa la lista al reves.
-
-          tu_lista.sorted() - Organiza una lista de forma temporal
+        <code>tu_lista.pop()</code> - Elimina el ultimo elemento de una lista, 
+          si agregas un numero va a eliminar el elemento en es index que le indiques pop(0)
+          , también te permite guardar ese ultimo elemento en una variable.
+          var_reservar = tu_lista.pop()<br/>
 
 
-          len.(tu_lista) - Encontrar el tamaño de una lista.
+          <code>tu_lista.remove('nombre_elemento')</code> - Para remover un elemento en especifico.<br/>
 
-          Cortar pedazos de la lista 
+          <code>del tu_lista[2]</code> - Elimina un elemento en el index que le indiques.<br/>
 
-          tu_lista[0:3] - Para cortar una lista.
-            [:3] - Para cortar desde el principio.
-            [2:] - Para cortar desde un index dado hasta el final.
-            [-2:] - Para cortar los últimos elementos del la lista.
-            [2:10, 3] - Para cortar del elemento 2 al 9 en saltos de 3.
+        <b>Acomodar</b><br/>
 
-          Copiar 
+        <code>tu_lista.reverse()</code> - Para cambiar el orden en una lista permanente.<br/>
 
-          tu_lista[:] - Para copiar una lista.
-        <p>
+        <code>tu_lista.sort()</code> - Organiza una lista de forma permanente, si agregas reverse=True 
+            organisa la lista al reves.<br/>
 
-        </p>
-        <code>
+        <code>tu_lista.sorted()</code> - Organiza una lista de forma temporal<br/>
 
-        </code>
+        <code>len.(tu_lista)</code> - Encontrar el tamaño de una lista.<br/>
+
+        Cortar pedazos de la lista <br/>
+
+        <code>tu_lista[0:3]</code> - Para cortar una lista.<br/>
+        <code>[:3]</code> - Para cortar desde el principio.<br/>
+        <code>[2:]</code> - Para cortar desde un index dado hasta el final.<br/>
+        <code>[-2:]</code> - Para cortar los últimos elementos del la lista.<br/>
+        <code>[2:10, 3]</code> - Para cortar del elemento 2 al 9 en saltos de 3.<br/>
+
+        <b>Copiar</b><br/>
+
+        <code>tu_lista[:]</code> - Para copiar una lista.
+      </p>
       </article>
     </section>
 
     <section class="main-section" id="tuples">
       <header>Tuples</header>
       <article>
-          mi_tupla = (1,) - Una Tupla es inmutable(no se puede modificar)
-                Aqui tengo una tupla de un solo elemento.
+        <p>
+          <code>mi_tupla = (1,) </code> - Una Tupla es inmutable(no se puede modificar)
+                Aqui tengo una tupla de un solo elemento.<br/>
 
           Un tuple es inmutable, pero si lo reescribes desde cero puedes modificarla.
-        <p>
-
         </p>
-        <code>
-
-        </code>
       </article>
     </section>
 
     <section class="main-section" id="diccionarios">
       <header>Diccionarios</header>
       <article>
-          
-        tu_dic = {}  - Creando un diccionario vacío
-
-        tu_dic["Elemento"] = "valor" - Agregar valores nuevos.
-
-        tu_dic["Elemento"] = "nuevo_valor" - Agrega nuevos valores a elementos existentes.
-
-        print(tu_dic["Elemento"]) - Accesando a un elemento.
-
-        del tu_dic["Elemento"] - Eliminando un elemento.
-
-
-        sorted(tu_dic.keys())	        - Devuelve una lista ordenada.
-
-        tu_dic.values() 		- Hace una lista de los valores un diccionario.
-
-        tu_lista = [dic1, dic2, dic3]   - Nesting diccionarios en una lista	
-
-        Variable = tu_lista[0]		- Variable adquiere a el primer diccionario
-
-        tu_dic = {"key": ["E1", "E2", "E3"]} - Una lista en un diccionario.
-
-        tu_dic = {"user1":{"Name": "Juan"; "age": 30}} - Un diccionario en un diccionario.
         <p>
-
+          <code>tu_dic = {} </code> - Creando un diccionario vacío<br/>
+  
+          tu_dic["Elemento"] = "valor" - Agregar valores nuevos.<br/>
+  
+          tu_dic["Elemento"] = "nuevo_valor" - Agrega nuevos valores a elementos existentes.<br/>
+  
+          print(tu_dic["Elemento"]) - Accesando a un elemento.<br/>
+  
+          del tu_dic["Elemento"] - Eliminando un elemento.<br/>
+  
+          sorted(tu_dic.keys())	        - Devuelve una lista ordenada.<br/>
+  
+          tu_dic.values() 		- Hace una lista de los valores un diccionario.<br/>
+  
+          tu_lista = [dic1, dic2, dic3]   - Nesting diccionarios en una lista	<br/>
+  
+          Variable = tu_lista[0]		- Variable adquiere a el primer diccionario<br/>
+  
+          tu_dic = {"key": ["E1", "E2", "E3"]} - Una lista en un diccionario.<br/>
+  
+          tu_dic = {"user1":{"Name": "Juan"; "age": 30}} - Un diccionario en un diccionario.<br/>
         </p>
-        <code>
-
-        </code>
+          
       </article>
     </section>
 
     <section class="main-section" id="set">
       <header>Set</header>
-      <article>
-         
-        set(tu_dic.values())		- Devuelve la lista de valores, pero dentro de un set
-                  Un set es una colección de items pero únicos, no 
-                  Repeticiones.
-                
-        tu_set = {"Elemento", "Elemento1", "Elemento"} - Puedes hacer un set, simplemente
-                    poniendo llaves al rededor, tendrá
-                    Exactamente en mimo comportamiento de
-                    un set, con items unicos, los set no
-                    muestran los datos un orden en especifico.
+      <article><br/>
         <p>
-
+          set(tu_dic.values())		- Devuelve la lista de valores, pero dentro de un set
+                    Un set es una colección de items pero únicos, no 
+                    Repeticiones.<br/>
+                  
+          tu_set = {"Elemento", "Elemento1", "Elemento"} - Puedes hacer un set, simplemente
+                      poniendo llaves al rededor, tendrá
+                      Exactamente en mimo comportamiento de
+                      un set, con items unicos, los set no
+                      muestran los datos un orden en especifico.<br/>
         </p>
-        <code>
-
-        </code>
       </article>
     </section>
 
     
     <section class="main-section" id="strings">
       <header>Strings</header>
-      <article>
-          tu_string.upper() - Todo mayusculas.
-
-          tu_string.lower() - Todo minúsculas.
-
-          tu_string.title() - Primera con mayúscula.
-
-          tu_string [::-1] - String al reves
-
-          tu_var = "texto 1"		- Con += asignas a una variable su propio 
-          tu_var += "texto 2" 	          valor y le agregas otro mas.
-          tu_var = "texto 1 texto 2"
+      <article><br/>
         <p>
+          tu_string.upper() - Todo mayusculas.<br/>
 
+          tu_string.lower() - Todo minúsculas.<br/>
+
+          tu_string.title() - Primera con mayúscula.<br/>
+
+          tu_string [::-1] - String al reves<br/>
+
+          tu_var = "texto 1"		- Con += asignas a una variable su propio <br/>
+          tu_var += "texto 2" 	          valor y le agregas otro mas.<br/>
+          tu_var = "texto 1 texto 2"<br/>
         </p>
-        <code>
-
-        </code>
       </article>
     </section>
 
     <section class="main-section" id="print">
       <header>Print</header>
       <article>
-        print(f"{'variable'} texto!") - Imprimir variables con texto
-
-        full_name = "{} {}".format(first_name, last_name) - Esto es para python 3.5 o versiones anteriores.
-
-        "\t" - Agrega un tab al string.
-
-        "\n" - Agrega una nueva linea.
-
-        tu_string.rstrip() - Elimina espacios blancos al final del string.
-
-        tu_string.lstrip() - Elimina espacios blancos pero al principio del string.
-
-        tu_string.strip() - Elimina espacios blancos de los dos lados en una sola ejecución.
         <p>
-
+          print(f"{'variable'} texto!") - Imprimir variables con texto<br/>
+  
+          full_name = "{} {}".format(first_name, last_name) - Esto es para python 3.5 o versiones anteriores.<br/>
+  
+          "\t" - Agrega un tab al string.<br/>
+  
+          "\n" - Agrega una nueva linea.<br/>
+  
+          tu_string.rstrip() - Elimina espacios blancos al final del string.<br/>
+  
+          tu_string.lstrip() - Elimina espacios blancos pero al principio del string.<br/>
+  
+          tu_string.strip() - Elimina espacios blancos de los dos lados en una sola ejecución.<br/>
         </p>
-        <code>
-
-        </code>
+    
       </article>
     </section>
 
     <section class="main-section" id="reference">
       <header>Reference</header>
-      <article>
-        What is Python
-        https://en.wikipedia.org/wiki/Python_(programming_language)#cite_ref-guttag_1-0
-        Functions
-        https://www.w3schools.com/python/python_functions.asp
-        Print:
-        Python: Crash course
-        Strings:
-        Python: Crash course
-        Operaciones:
-        Python: Crash course
-        Listas:
-        Python: Crash course
-        Tuples:
-        Python: Crash course
-        Diccionarios:
-        Python: Crash course
-        Set:
-        Python: Crash course
+      <article><br/>
         <p>
-
+          What is Python<br/>
+          https://en.wikipedia.org/wiki/Python_(programming_language)#cite_ref-guttag_1-0<br/>
+          Functions<br/>
+          https://www.w3schools.com/python/python_functions.asp<br/>
+          Print, Strings, Operaciones, Listas, Tuples, Diccionarios and Set's info come from:<br/>
+          Python: Crash course<br/>
         </p>
-        <code>
 
-        </code>
       </article>
     </section>
 
   </main>
+  <script src="main.js"></script>
 </body>
 </html>

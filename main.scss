@@ -1,4 +1,4 @@
-@import "config", "menu";
+@import "menu";
 
 body {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -230,9 +230,10 @@ main#main-doc {
 @media (max-width: 800px) { 
   nav#navbar {
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     height: 75px;
+    min-width: 300px;
     width: 100%;
     color: #EEE;
     border: 2px solid blue;
@@ -243,17 +244,38 @@ main#main-doc {
       margin-left: auto;
       margin-right: auto;
       font-size: 22px;
+      text-align: center;
     }
   
     ul {
+      display: none;
+      top: 65px;
+      left: 0px;
+      &.open {
+        color: black;
+        position: absolute;
+        background: lightblue;
+        width: 100%;
+        z-index: 1;
+      }
       li {
+        width: 70%;
+        text-align: center;
+        font-weight: bold;
         list-style-type: none;
-        text-align: left;
+
+        &.open {
+          border-bottom: 1px solid blue;
+        }
+
         a.nav-link {
           line-height: 40px;
           font-size: 16px;
           text-decoration: none;
           color: whitesmoke;
+          &.open {
+            border-bottom: 2px solid red;
+          }
   
         }
       }
@@ -262,8 +284,8 @@ main#main-doc {
 
   main#main-doc {
     margin-top: 100px;
-    width: 90%;
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }

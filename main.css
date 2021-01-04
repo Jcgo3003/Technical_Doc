@@ -1,10 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @media (max-width: 800px) {
   #menu-btn {
     position: fixed;
@@ -16,7 +9,7 @@
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
-  #menu-btn .burger {
+  #menu-btn #burger {
     position: fixed;
     top: 35px;
     left: 35px;
@@ -26,7 +19,7 @@
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
-  #menu-btn .burger::before {
+  #menu-btn #burger::before {
     content: "";
     position: fixed;
     top: 25px;
@@ -36,7 +29,7 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  #menu-btn .burger::after {
+  #menu-btn #burger::after {
     content: '';
     position: fixed;
     top: 45px;
@@ -46,14 +39,14 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  #menu-btn .burger:hover {
+  #menu-btn #burger.open {
     background: transparent;
   }
-  #menu-btn .burger:hover::before {
+  #menu-btn #burger.open::before {
     -webkit-transform: rotate(45deg) translate(8px, 8px);
             transform: rotate(45deg) translate(8px, 8px);
   }
-  #menu-btn .burger:hover::after {
+  #menu-btn #burger.open::after {
     width: 35px;
     -webkit-transform: rotate(-45deg) translate(6px, -7px);
             transform: rotate(-45deg) translate(6px, -7px);
@@ -118,9 +111,10 @@ main#main-doc {
 @media (max-width: 800px) {
   nav#navbar {
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     height: 75px;
+    min-width: 300px;
     width: 100%;
     color: #EEE;
     border: 2px solid blue;
@@ -131,10 +125,28 @@ main#main-doc {
     margin-left: auto;
     margin-right: auto;
     font-size: 22px;
+    text-align: center;
+  }
+  nav#navbar ul {
+    display: none;
+    top: 65px;
+    left: 0px;
+  }
+  nav#navbar ul.open {
+    color: black;
+    position: absolute;
+    background: lightblue;
+    width: 100%;
+    z-index: 1;
   }
   nav#navbar ul li {
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
     list-style-type: none;
-    text-align: left;
+  }
+  nav#navbar ul li.open {
+    border-bottom: 1px solid blue;
   }
   nav#navbar ul li a.nav-link {
     line-height: 40px;
@@ -142,11 +154,14 @@ main#main-doc {
     text-decoration: none;
     color: whitesmoke;
   }
+  nav#navbar ul li a.nav-link.open {
+    border-bottom: 2px solid red;
+  }
   main#main-doc {
     margin-top: 100px;
-    width: 90%;
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
